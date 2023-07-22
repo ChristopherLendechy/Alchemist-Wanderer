@@ -1,97 +1,10 @@
-<<<<<<< HEAD
-[gd_scene load_steps=5 format=3 uid="uid://br0v5wrkk8u6f"]
+[gd_scene load_steps=2 format=3 uid="uid://br0v5wrkk8u6f"]
 
-[ext_resource type="Texture2D" uid="uid://dirslcf2uj6ku" path="res://Assets/Map/panelInset_beige.png" id="1_ftjdm"]
-[ext_resource type="Texture2D" uid="uid://cif7kvs604560" path="res://Assets/Map/panel_brown.png" id="1_ovtws"]
-[ext_resource type="Texture2D" uid="uid://d0ulknmxcql5h" path="res://Assets/Map/buttonSquare_blue.png" id="3_umb3q"]
-[ext_resource type="Texture2D" uid="uid://df4ehnfyl5c8p" path="res://Assets/Map/panel_beige.png" id="4_skski"]
+[ext_resource type="PackedScene" uid="uid://cjvnwlxbvxq4d" path="res://Scenes/cardScene2.tscn" id="1_3247b"]
 
 [node name="=== Scene Root ===" type="Node"]
 
-[node name="mapbackground" type="NinePatchRect" parent="."]
-offset_left = 156.0
-offset_top = 32.0
-offset_right = 1096.0
-offset_bottom = 440.0
-texture = ExtResource("1_ovtws")
-region_rect = Rect2(0, 0, 100, 100)
-patch_margin_left = 92
-patch_margin_top = 7
-patch_margin_right = 92
-patch_margin_bottom = 8
+[node name="Card" parent="." instance=ExtResource("1_3247b")]
 
-[node name="map" type="NinePatchRect" parent="."]
-offset_left = 253.0
-offset_top = 70.0
-offset_right = 1013.0
-offset_bottom = 399.0
-texture = ExtResource("1_ftjdm")
-region_rect = Rect2(1, 2, 92, 92)
-patch_margin_left = 89
-patch_margin_top = 7
-patch_margin_right = 89
-patch_margin_bottom = 10
-
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
-anchors_preset = -1
-anchor_top = 0.633
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 0.23999
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_vertical = 0
-texture = ExtResource("3_umb3q")
-region_rect = Rect2(0, 1, 45, 48)
-patch_margin_left = 7
-patch_margin_top = 4
-patch_margin_right = 7
-patch_margin_bottom = 9
-metadata/_edit_use_anchors_ = true
-
-[node name="=== Place Holder Tiles ===" type="Node" parent="."]
-
-[node name="PanelBeige" type="Sprite2D" parent="."]
-position = Vector2(615, 523)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige2" type="Sprite2D" parent="."]
-position = Vector2(314, 522)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige3" type="Sprite2D" parent="."]
-position = Vector2(471, 521)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige4" type="Sprite2D" parent="."]
-position = Vector2(312, 635)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige5" type="Sprite2D" parent="."]
-position = Vector2(474, 638)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige6" type="Sprite2D" parent="."]
-position = Vector2(619, 640)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige7" type="Sprite2D" parent="."]
-position = Vector2(763, 520)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige8" type="Sprite2D" parent="."]
-position = Vector2(766, 635)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige9" type="Sprite2D" parent="."]
-position = Vector2(926, 525)
-texture = ExtResource("4_skski")
-
-[node name="PanelBeige10" type="Sprite2D" parent="."]
-position = Vector2(929, 638)
-texture = ExtResource("4_skski")
-=======
-[gd_scene format=3 uid="uid://br0v5wrkk8u6f"]
-
-[node name="=== Scene Root ===" type="Node"]
->>>>>>> main
+[node name="Card2" parent="." instance=ExtResource("1_3247b")]
+position = Vector2(601, 424)
