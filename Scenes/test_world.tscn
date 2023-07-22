@@ -52,7 +52,7 @@ metadata/_edit_use_anchors_ = true
 [node name="=== Place Holder Tiles ===" type="Node" parent="."]
 
 [node name="PanelBeige" type="Sprite2D" parent="."]
-position = Vector2(562, 511)
+position = Vector2(562, 520)
 texture = ExtResource("4_amvis")
 
 [node name="PanelBeige2" type="Sprite2D" parent="."]

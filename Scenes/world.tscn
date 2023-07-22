@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=5 format=3 uid="uid://br0v5wrkk8u6f"]
 
 [ext_resource type="Texture2D" uid="uid://dirslcf2uj6ku" path="res://Assets/Map/panelInset_beige.png" id="1_ftjdm"]
@@ -89,3 +90,8 @@ texture = ExtResource("4_skski")
 [node name="PanelBeige10" type="Sprite2D" parent="."]
 position = Vector2(929, 638)
 texture = ExtResource("4_skski")
+=======
+[gd_scene format=3 uid="uid://br0v5wrkk8u6f"]
+
+[node name="=== Scene Root ===" type="Node"]
+>>>>>>> main
