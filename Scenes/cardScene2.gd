@@ -42,8 +42,3 @@ func flip_back():
 	tween.tween_property($".","scale",Vector2(1,1),0.2)
 	
 	
-
-	
-
-	
-
