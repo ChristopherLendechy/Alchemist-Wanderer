@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://br0v5wrkk8u6f"]
+[gd_scene load_steps=3 format=3 uid="uid://br0v5wrkk8u6f"]
 
-[node name="World" type="Node"]
+[ext_resource type="Texture2D" uid="uid://by708knoixl31" path="res://Assets/UI/border_ui.png" id="1_huej2"]
+[ext_resource type="PackedScene" uid="uid://deqhfdgl2jk2i" path="res://Scenes/basic_sprite.tscn" id="2_0tevg"]
+
+[node name="=== Scene Root ===" type="Node"]
+
+[node name="BorderUi" type="Sprite2D" parent="."]
+position = Vector2(120.5, 79.5)
+scale = Vector2(0.466797, 0.419271)
+texture = ExtResource("1_huej2")
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_0tevg")]
+position = Vector2(104, 70)
