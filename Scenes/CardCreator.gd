@@ -4,6 +4,8 @@ var regions = []
 var pickedRegions = []
 var card = preload("res://Scenes/cardScene2.tscn")
 var cards : Array[Card]
+var lastRound = false
+signal cardsCreated
 func _ready() -> void:
 	load_regions_from_json()
 	makeCards()
@@ -16,16 +18,19 @@ func makeCards():
 			var currentCard = card.instantiate()
 			currentCard.get_node("CardFront").region_rect = pickedRegions[i]
 			if pickedRegions[i].size.x !=  pickedRegions[i].size.y:
+				print(pickedRegions[i].size.x,pickedRegions[i].size.y)
 				if pickedRegions[i].size.x > pickedRegions[i].size.y:
-					currentCard.get_node("CardFront").apply_scale(Vector2(0.75,0.75))
+					currentCard.get_node("CardFront").apply_scale(Vector2(0.5,0.5))
 				if pickedRegions[i].size.x < pickedRegions[i].size.y:
-					currentCard.get_node("CardFront").apply_scale(Vector2(0.75,0.75))
+					currentCard.get_node("CardFront").apply_scale(Vector2(0.5,0.5))
 			cards.append(currentCard)
 			
 	cards.shuffle()
 	for card in cards:
+		
 		add_child(card)		
 	place_cards_in_grid()
+	cardsCreated.emit()
 	pass
 
 func load_regions_from_json() -> Array:
@@ -39,7 +44,8 @@ func load_regions_from_json() -> Array:
 			#print(data_received) # Prints array
 			for sprite in data_received:
 				var rect_data = sprite["rect"]
-				regions.append(Rect2(rect_data["x"], rect_data["y"], rect_data["width"], rect_data["height"]))
+				if sprite["name"] != "compass.png" and (sprite["name"] != "chest.png" and lastRound == false):
+					regions.append(Rect2(rect_data["x"], rect_data["y"], rect_data["width"], rect_data["height"]))
 			return regions
 		else:
 			print("Unexpected data")
@@ -53,10 +59,10 @@ func load_regions_from_json() -> Array:
 func pickRandomCards() :
 	var copyArray = regions
 	for i in range(numberOfMatches):
-		var randomInt = randi_range(0,copyArray.size())
+		var randomInt = randi_range(0,copyArray.size()-1)
 		pickedRegions.append(copyArray[randomInt])
 		copyArray.remove_at(randomInt)
-	print(pickedRegions)
+
 
 
 func place_cards_in_grid():

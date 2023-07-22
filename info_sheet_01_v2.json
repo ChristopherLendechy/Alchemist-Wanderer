@@ -1,749 +1,749 @@
 [
-    {
-        "name": "arrowCorner.png",
-        "rect": {
-            "x": 512,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "arrowCornerSquare.png",
-        "rect": {
-            "x": 1024,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "arrowCrossing.png",
-        "rect": {
-            "x": 1024,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "arrowEnd.png",
-        "rect": {
-            "x": 1024,
-            "y": 896,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "arrowHead.png",
-        "rect": {
-            "x": 1024,
-            "y": 768,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "arrowSmall.png",
-        "rect": {
-            "x": 1024,
-            "y": 640,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "arrowSplit.png",
-        "rect": {
-            "x": 1024,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "arrowStraight.png",
-        "rect": {
-            "x": 1024,
-            "y": 384,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "banner.png",
-        "rect": {
-            "x": 1024,
-            "y": 256,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "bridge.png",
-        "rect": {
-            "x": 1024,
-            "y": 128,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "bridgeRope.png",
-        "rect": {
-            "x": 1024,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "bush.png",
-        "rect": {
-            "x": 896,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "cactus.png",
-        "rect": {
-            "x": 896,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "cactusLarge.png",
-        "rect": {
-            "x": 896,
-            "y": 896,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "campfire.png",
-        "rect": {
-            "x": 896,
-            "y": 768,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "castle.png",
-        "rect": {
-            "x": 896,
-            "y": 640,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "castleTall.png",
-        "rect": {
-            "x": 896,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "castleWide.png",
-        "rect": {
-            "x": 0,
-            "y": 0,
-            "width": 256,
-            "height": 128
-        }
-    },
-    {
-        "name": "castleWideLow.png",
-        "rect": {
-            "x": 0,
-            "y": 128,
-            "width": 256,
-            "height": 128
-        }
-    },
-    {
-        "name": "chest.png",
-        "rect": {
-            "x": 896,
-            "y": 128,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "church.png",
-        "rect": {
-            "x": 896,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "churchLarge.png",
-        "rect": {
-            "x": 768,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "compass.png",
-        "rect": {
-            "x": 768,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "dock.png",
-        "rect": {
-            "x": 768,
-            "y": 896,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "elementCircle.png",
-        "rect": {
-            "x": 768,
-            "y": 768,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "elementCross.png",
-        "rect": {
-            "x": 768,
-            "y": 640,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "elementDiamond.png",
-        "rect": {
-            "x": 768,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "elementShield.png",
-        "rect": {
-            "x": 768,
-            "y": 384,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "elementSquare.png",
-        "rect": {
-            "x": 768,
-            "y": 256,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "fence.png",
-        "rect": {
-            "x": 768,
-            "y": 128,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "flag.png",
-        "rect": {
-            "x": 768,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "gate.png",
-        "rect": {
-            "x": 640,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "graveyard.png",
-        "rect": {
-            "x": 640,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "house.png",
-        "rect": {
-            "x": 640,
-            "y": 896,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "houseChimney.png",
-        "rect": {
-            "x": 640,
-            "y": 768,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "houseSmall.png",
-        "rect": {
-            "x": 640,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "houseTall.png",
-        "rect": {
-            "x": 640,
-            "y": 384,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "houseViking.png",
-        "rect": {
-            "x": 640,
-            "y": 256,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "houses.png",
-        "rect": {
-            "x": 640,
-            "y": 640,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "lake.png",
-        "rect": {
-            "x": 0,
-            "y": 256,
-            "width": 256,
-            "height": 128
-        }
-    },
-    {
-        "name": "lakeRound.png",
-        "rect": {
-            "x": 0,
-            "y": 384,
-            "width": 256,
-            "height": 128
-        }
-    },
-    {
-        "name": "lighthouse.png",
-        "rect": {
-            "x": 1152,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "mill.png",
-        "rect": {
-            "x": 512,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "mine.png",
-        "rect": {
-            "x": 512,
-            "y": 896,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "palm.png",
-        "rect": {
-            "x": 512,
-            "y": 768,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "palmLarge.png",
-        "rect": {
-            "x": 512,
-            "y": 640,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "pathCorner.png",
-        "rect": {
-            "x": 512,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "pathCrossing.png",
-        "rect": {
-            "x": 512,
-            "y": 384,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "pathEnd.png",
-        "rect": {
-            "x": 512,
-            "y": 256,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "pathSplit.png",
-        "rect": {
-            "x": 896,
-            "y": 256,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "pathStraight.png",
-        "rect": {
-            "x": 896,
-            "y": 384,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "pyramid.png",
-        "rect": {
-            "x": 384,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "rocks.png",
-        "rect": {
-            "x": 384,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "rocksA.png",
-        "rect": {
-            "x": 384,
-            "y": 896,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "rocksB.png",
-        "rect": {
-            "x": 384,
-            "y": 768,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "rocksMountain.png",
-        "rect": {
-            "x": 384,
-            "y": 640,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "rocksTall.png",
-        "rect": {
-            "x": 384,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "ruins.png",
-        "rect": {
-            "x": 384,
-            "y": 384,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "ship.png",
-        "rect": {
-            "x": 384,
-            "y": 256,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "skull.png",
-        "rect": {
-            "x": 640,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "stable.png",
-        "rect": {
-            "x": 640,
-            "y": 128,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "tent.png",
-        "rect": {
-            "x": 256,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "textureBricks.png",
-        "rect": {
-            "x": 256,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "textureStone.png",
-        "rect": {
-            "x": 256,
-            "y": 896,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "textureWater.png",
-        "rect": {
-            "x": 256,
-            "y": 768,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "tipi.png",
-        "rect": {
-            "x": 256,
-            "y": 640,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "tower.png",
-        "rect": {
-            "x": 256,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "towerLow.png",
-        "rect": {
-            "x": 256,
-            "y": 384,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "towerTall.png",
-        "rect": {
-            "x": 256,
-            "y": 256,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "towerWatch.png",
-        "rect": {
-            "x": 256,
-            "y": 128,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "treePine.png",
-        "rect": {
-            "x": 256,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "treePineLarge.png",
-        "rect": {
-            "x": 128,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "treePineTall.png",
-        "rect": {
-            "x": 128,
-            "y": 768,
-            "width": 128,
-            "height": 256
-        }
-    },
-    {
-        "name": "treePineTallLarge.png",
-        "rect": {
-            "x": 128,
-            "y": 512,
-            "width": 128,
-            "height": 256
-        }
-    },
-    {
-        "name": "treePineTallLow.png",
-        "rect": {
-            "x": 0,
-            "y": 896,
-            "width": 128,
-            "height": 256
-        }
-    },
-    {
-        "name": "treePines.png",
-        "rect": {
-            "x": 128,
-            "y": 1024,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "treePinesSmall.png",
-        "rect": {
-            "x": 0,
-            "y": 1152,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "treeTall.png",
-        "rect": {
-            "x": 0,
-            "y": 640,
-            "width": 128,
-            "height": 256
-        }
-    },
-    {
-        "name": "vulcano.png",
-        "rect": {
-            "x": 0,
-            "y": 512,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "wall.png",
-        "rect": {
-            "x": 384,
-            "y": 128,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "watchtower.png",
-        "rect": {
-            "x": 384,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "waterWheel.png",
-        "rect": {
-            "x": 512,
-            "y": 128,
-            "width": 128,
-            "height": 128
-        }
-    },
-    {
-        "name": "well.png",
-        "rect": {
-            "x": 512,
-            "y": 0,
-            "width": 128,
-            "height": 128
-        }
-    }
+	{
+		"name": "arrowCorner.png",
+		"rect": {
+			"x": 512,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowCornerSquare.png",
+		"rect": {
+			"x": 1024,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowCrossing.png",
+		"rect": {
+			"x": 1024,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowEnd.png",
+		"rect": {
+			"x": 1024,
+			"y": 896,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowHead.png",
+		"rect": {
+			"x": 1024,
+			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowSmall.png",
+		"rect": {
+			"x": 1024,
+			"y": 640,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowSplit.png",
+		"rect": {
+			"x": 1024,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowStraight.png",
+		"rect": {
+			"x": 1024,
+			"y": 384,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "banner.png",
+		"rect": {
+			"x": 1024,
+			"y": 256,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "bridge.png",
+		"rect": {
+			"x": 1024,
+			"y": 128,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "bridgeRope.png",
+		"rect": {
+			"x": 1024,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "bush.png",
+		"rect": {
+			"x": 896,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "cactus.png",
+		"rect": {
+			"x": 896,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "cactusLarge.png",
+		"rect": {
+			"x": 896,
+			"y": 896,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "campfire.png",
+		"rect": {
+			"x": 896,
+			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "castle.png",
+		"rect": {
+			"x": 896,
+			"y": 640,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "castleTall.png",
+		"rect": {
+			"x": 896,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "castleWide.png",
+		"rect": {
+			"x": 0,
+			"y": 0,
+			"width": 256,
+			"height": 128
+		}
+	},
+	{
+		"name": "castleWideLow.png",
+		"rect": {
+			"x": 0,
+			"y": 128,
+			"width": 256,
+			"height": 128
+		}
+	},
+	{
+		"name": "chest.png",
+		"rect": {
+			"x": 896,
+			"y": 128,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "church.png",
+		"rect": {
+			"x": 896,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "churchLarge.png",
+		"rect": {
+			"x": 768,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "compass.png",
+		"rect": {
+			"x": 768,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "dock.png",
+		"rect": {
+			"x": 768,
+			"y": 896,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "elementCircle.png",
+		"rect": {
+			"x": 768,
+			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "elementCross.png",
+		"rect": {
+			"x": 768,
+			"y": 640,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "elementDiamond.png",
+		"rect": {
+			"x": 768,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "elementShield.png",
+		"rect": {
+			"x": 768,
+			"y": 384,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "elementSquare.png",
+		"rect": {
+			"x": 768,
+			"y": 256,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "fence.png",
+		"rect": {
+			"x": 768,
+			"y": 128,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "flag.png",
+		"rect": {
+			"x": 768,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "gate.png",
+		"rect": {
+			"x": 640,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "graveyard.png",
+		"rect": {
+			"x": 640,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "house.png",
+		"rect": {
+			"x": 640,
+			"y": 896,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "houseChimney.png",
+		"rect": {
+			"x": 640,
+			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "houseSmall.png",
+		"rect": {
+			"x": 640,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "houseTall.png",
+		"rect": {
+			"x": 640,
+			"y": 384,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "houseViking.png",
+		"rect": {
+			"x": 640,
+			"y": 256,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "houses.png",
+		"rect": {
+			"x": 640,
+			"y": 640,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "lake.png",
+		"rect": {
+			"x": 0,
+			"y": 256,
+			"width": 256,
+			"height": 128
+		}
+	},
+	{
+		"name": "lakeRound.png",
+		"rect": {
+			"x": 0,
+			"y": 384,
+			"width": 256,
+			"height": 128
+		}
+	},
+	{
+		"name": "lighthouse.png",
+		"rect": {
+			"x": 1152,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "mill.png",
+		"rect": {
+			"x": 512,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "mine.png",
+		"rect": {
+			"x": 512,
+			"y": 896,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "palm.png",
+		"rect": {
+			"x": 512,
+			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "palmLarge.png",
+		"rect": {
+			"x": 512,
+			"y": 640,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "pathCorner.png",
+		"rect": {
+			"x": 512,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "pathCrossing.png",
+		"rect": {
+			"x": 512,
+			"y": 384,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "pathEnd.png",
+		"rect": {
+			"x": 512,
+			"y": 256,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "pathSplit.png",
+		"rect": {
+			"x": 896,
+			"y": 256,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "pathStraight.png",
+		"rect": {
+			"x": 896,
+			"y": 384,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "pyramid.png",
+		"rect": {
+			"x": 384,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "rocks.png",
+		"rect": {
+			"x": 384,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "rocksA.png",
+		"rect": {
+			"x": 384,
+			"y": 896,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "rocksB.png",
+		"rect": {
+			"x": 384,
+			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "rocksMountain.png",
+		"rect": {
+			"x": 384,
+			"y": 640,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "rocksTall.png",
+		"rect": {
+			"x": 384,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "ruins.png",
+		"rect": {
+			"x": 384,
+			"y": 384,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "ship.png",
+		"rect": {
+			"x": 384,
+			"y": 256,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "skull.png",
+		"rect": {
+			"x": 640,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "stable.png",
+		"rect": {
+			"x": 640,
+			"y": 128,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "tent.png",
+		"rect": {
+			"x": 256,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "textureBricks.png",
+		"rect": {
+			"x": 256,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "textureStone.png",
+		"rect": {
+			"x": 256,
+			"y": 896,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "textureWater.png",
+		"rect": {
+			"x": 256,
+			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "tipi.png",
+		"rect": {
+			"x": 256,
+			"y": 640,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "tower.png",
+		"rect": {
+			"x": 256,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "towerLow.png",
+		"rect": {
+			"x": 256,
+			"y": 384,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "towerTall.png",
+		"rect": {
+			"x": 256,
+			"y": 256,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "towerWatch.png",
+		"rect": {
+			"x": 256,
+			"y": 128,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "treePine.png",
+		"rect": {
+			"x": 256,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "treePineLarge.png",
+		"rect": {
+			"x": 128,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "treePineTall.png",
+		"rect": {
+			"x": 128,
+			"y": 768,
+			"width": 128,
+			"height": 256
+		}
+	},
+	{
+		"name": "treePineTallLarge.png",
+		"rect": {
+			"x": 128,
+			"y": 512,
+			"width": 128,
+			"height": 256
+		}
+	},
+	{
+		"name": "treePineTallLow.png",
+		"rect": {
+			"x": 0,
+			"y": 896,
+			"width": 128,
+			"height": 256
+		}
+	},
+	{
+		"name": "treePines.png",
+		"rect": {
+			"x": 128,
+			"y": 1024,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "treePinesSmall.png",
+		"rect": {
+			"x": 0,
+			"y": 1152,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "treeTall.png",
+		"rect": {
+			"x": 0,
+			"y": 640,
+			"width": 128,
+			"height": 256
+		}
+	},
+	{
+		"name": "vulcano.png",
+		"rect": {
+			"x": 0,
+			"y": 512,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "wall.png",
+		"rect": {
+			"x": 384,
+			"y": 128,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "watchtower.png",
+		"rect": {
+			"x": 384,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "waterWheel.png",
+		"rect": {
+			"x": 512,
+			"y": 128,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "well.png",
+		"rect": {
+			"x": 512,
+			"y": 0,
+			"width": 128,
+			"height": 128
+		}
+	}
 ]

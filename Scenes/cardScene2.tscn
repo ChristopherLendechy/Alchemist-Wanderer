@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wgdl1"]
 size = Vector2(81.4669, 80.4076)
 
-[node name="Card" type="Sprite2D"]
+[node name="Card" type="Sprite2D" groups=["cards"]]
 position = Vector2(752, 432)
 texture = ExtResource("1_5npmf")
 script = ExtResource("2_xumka")

@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://crgduwamotljr"]
+[gd_scene load_steps=3 format=3 uid="uid://crgduwamotljr"]
 
 [ext_resource type="Script" path="res://Scenes/CardCreator.gd" id="1_q8773"]
+[ext_resource type="PackedScene" path="res://Scenes/in_game_debug.tscn" id="2_dx608"]
 
 [node name="CardCreator" type="Node2D"]
 position = Vector2(236, 286)
 script = ExtResource("1_q8773")
 numberOfMatches = 5
+
+[node name="in_game_debug" parent="." instance=ExtResource("2_dx608")]
