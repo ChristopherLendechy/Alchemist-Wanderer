@@ -1,0 +1,105 @@
+[gd_scene load_steps=14 format=3 uid="uid://ckyfn6f26hmhj"]
+
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_ideiu"]
+[ext_resource type="Texture2D" uid="uid://b5kx3p3lred7c" path="res://Assets/Map/parchmentCrinkled.png" id="1_ql06x"]
+[ext_resource type="Script" path="res://Scenes/MainMenu.gd" id="2_swqf3"]
+[ext_resource type="FontFile" uid="uid://b4hbobhwav07w" path="res://Assets/Fonts/CabinSketch-Bold.ttf" id="2_v6alk"]
+[ext_resource type="FontFile" uid="uid://80gsysk886ui" path="res://Assets/Fonts/CabinSketch-Regular.ttf" id="3_u6ji3"]
+[ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="4_tkp8j"]
+[ext_resource type="AudioStream" uid="uid://cpk0eydwyengq" path="res://Assets/Audio/calm-music-for-a-horror-game-155206.mp3" id="6_1kfhq"]
+[ext_resource type="AudioStream" uid="uid://b7h4rvu8d825p" path="res://Assets/Audio/page-flip-8.wav" id="6_yhghn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6rjwr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v2f0m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pw038"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7xddh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_14d1k"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_ideiu")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = -520.0
+offset_top = -2.0
+offset_right = 1281.0
+offset_bottom = 721.0
+texture = ExtResource("1_ql06x")
+region_rect = Rect2(0, 0, 1024, 1024)
+patch_margin_left = 258
+patch_margin_top = 254
+patch_margin_right = 256
+patch_margin_bottom = 256
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("2_swqf3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.288
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 280.616
+offset_top = 82.0
+offset_right = -257.0
+offset_bottom = -459.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_v6alk")
+theme_override_font_sizes/normal_font_size = 120
+bbcode_enabled = true
+text = "[shake rate=5 level=10 connected=10]Match 2 Map[/shake]"
+
+[node name="Button" type="Button" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1071.0
+offset_top = 367.0
+offset_right = -563.0
+offset_bottom = -254.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_u6ji3")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6rjwr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_v2f0m")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pw038")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7xddh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_14d1k")
+text = "Play"
+flat = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 823.0
+offset_top = 649.0
+offset_right = -332.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_u6ji3")
+theme_override_font_sizes/normal_font_size = 39
+bbcode_enabled = true
+text = "[tornado radius=.5 freq=-10]Match the tiles to complete the map![tornado]"
+
+[node name="TransitionSound" type="AudioStreamPlayer" parent="NinePatchRect"]
+stream = ExtResource("6_yhghn")
+
+[node name="in_game_debug" parent="." instance=ExtResource("4_tkp8j")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_1kfhq")
+volume_db = -10.307
+
+[connection signal="pressed" from="NinePatchRect/Button" to="NinePatchRect" method="_on_button_pressed"]

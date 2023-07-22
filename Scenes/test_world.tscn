@@ -13,7 +13,6 @@ position = Vector2(253, 70)
 script = ExtResource("1_044gr")
 
 [node name="map" type="NinePatchRect" parent="Node2D"]
-anchors_preset = -1
 offset_left = -60.0
 offset_top = -50.0
 offset_right = 835.0
