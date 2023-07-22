@@ -1,139 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://cjvnwlxbvxq4d"]
+[gd_scene load_steps=5 format=3 uid="uid://cjvnwlxbvxq4d"]
 
 [ext_resource type="Texture2D" uid="uid://3ss4uyc3nu83" path="res://Assets/Cartography Pack/panelInset_beige.png" id="1_5npmf"]
 [ext_resource type="Script" path="res://Scenes/cardScene2.gd" id="2_xumka"]
 [ext_resource type="Texture2D" uid="uid://dfxkt8l1yc3fw" path="res://Assets/Cartography Pack/spritesheet_retina-export.png" id="3_wmo4m"]
 
-[sub_resource type="Animation" id="Animation_sj4x5"]
-resource_name = "FlipBack"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Card:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(1.59574, 1.6292), Vector2(-0.0171585, 1.6292), Vector2(1.6065, 1.6292)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Card/CardFront:self_modulate")
-tracks/1/interp = 0
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Card/CardBack:self_modulate")
-tracks/2/interp = 0
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_k3vad"]
-resource_name = "FlipForward"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Card:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(1.59574, 1.6292), Vector2(-0.0171585, 1.6292), Vector2(1.6065, 1.6292)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Card/CardFront:self_modulate")
-tracks/1/interp = 0
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Card/CardBack:self_modulate")
-tracks/2/interp = 0
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_gg28i"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Card:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1.59574, 1.6292)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Card/CardFront:self_modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Card/CardBack:self_modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_pw218"]
-_data = {
-"FlipBack": SubResource("Animation_sj4x5"),
-"FlipForward": SubResource("Animation_k3vad"),
-"RESET": SubResource("Animation_gg28i")
-}
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wgdl1"]
 size = Vector2(81.4669, 80.4076)
 
 [node name="Card" type="Sprite2D"]
-position = Vector2(572, 315)
-scale = Vector2(1.59574, 1.6292)
+position = Vector2(752, 432)
 texture = ExtResource("1_5npmf")
 script = ExtResource("2_xumka")
 metadata/_edit_group_ = true
@@ -144,7 +19,7 @@ position = Vector2(1.90948, 1.95439)
 scale = Vector2(0.693408, 0.695008)
 texture = ExtResource("3_wmo4m")
 region_enabled = true
-region_rect = Rect2(662, 398, 84, 108)
+region_rect = Rect2(390, 533, 116, 93)
 
 [node name="CardBack" type="Sprite2D" parent="."]
 position = Vector2(1.90948, 1.95439)
@@ -152,12 +27,6 @@ scale = Vector2(0.693408, 0.695008)
 texture = ExtResource("3_wmo4m")
 region_enabled = true
 region_rect = Rect2(774, 1030, 116, 116)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../..")
-libraries = {
-"": SubResource("AnimationLibrary_pw218")
-}
 
 [node name="Area2D" type="Area2D" parent="."]
 

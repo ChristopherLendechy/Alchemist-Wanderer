@@ -1,3 +1,20 @@
-[gd_scene format=3 uid="uid://br0v5wrkk8u6f"]
+[gd_scene load_steps=4 format=3 uid="uid://br0v5wrkk8u6f"]
+
+[ext_resource type="PackedScene" uid="uid://cjvnwlxbvxq4d" path="res://Scenes/cardScene2.tscn" id="1_3247b"]
+[ext_resource type="Texture2D" uid="uid://b3d875qwk0pe" path="res://Assets/Cartography Pack/spritesheet_retina.png" id="4_7eweq"]
+[ext_resource type="Texture2D" uid="uid://dfxkt8l1yc3fw" path="res://Assets/Cartography Pack/spritesheet_retina-export.png" id="6_6kg0r"]
 
 [node name="=== Scene Root ===" type="Node"]
+
+[node name="Card" parent="." instance=ExtResource("1_3247b")]
+
+[node name="Card2" parent="." instance=ExtResource("1_3247b")]
+position = Vector2(601, 424)
+
+[node name="SpritesheetRetina-export" type="Sprite2D" parent="."]
+position = Vector2(36, 467)
+texture = ExtResource("6_6kg0r")
+
+[node name="SpritesheetRetina" type="Sprite2D" parent="."]
+position = Vector2(34, 468)
+texture = ExtResource("4_7eweq")
