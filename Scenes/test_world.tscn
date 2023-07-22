@@ -1,29 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://j7k3jm1odki3"]
+[gd_scene load_steps=6 format=3 uid="uid://j7k3jm1odki3"]
 
+[ext_resource type="Script" path="res://Scenes/mapscript.gd" id="1_044gr"]
 [ext_resource type="Texture2D" uid="uid://cif7kvs604560" path="res://Assets/Map/panel_brown.png" id="1_vyelk"]
 [ext_resource type="Texture2D" uid="uid://dirslcf2uj6ku" path="res://Assets/Map/panelInset_beige.png" id="2_65hff"]
 [ext_resource type="Texture2D" uid="uid://d0ulknmxcql5h" path="res://Assets/Map/buttonSquare_blue.png" id="3_w4w3h"]
-[ext_resource type="Texture2D" uid="uid://df4ehnfyl5c8p" path="res://Assets/Map/panel_beige.png" id="4_amvis"]
+[ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="5_tdjob"]
 
 [node name="=== Scene Root ===" type="Node"]
 
-[node name="mapbackground" type="NinePatchRect" parent="."]
-offset_left = 156.0
-offset_top = 32.0
-offset_right = 1096.0
-offset_bottom = 440.0
-texture = ExtResource("1_vyelk")
-region_rect = Rect2(0, 0, 100, 100)
-patch_margin_left = 92
-patch_margin_top = 7
-patch_margin_right = 92
-patch_margin_bottom = 8
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(253, 70)
+script = ExtResource("1_044gr")
 
-[node name="map" type="NinePatchRect" parent="."]
-offset_left = 253.0
-offset_top = 70.0
-offset_right = 1013.0
-offset_bottom = 399.0
+[node name="map" type="NinePatchRect" parent="Node2D"]
+anchors_preset = -1
+offset_left = -60.0
+offset_top = -50.0
+offset_right = 835.0
+offset_bottom = 360.0
 texture = ExtResource("2_65hff")
 region_rect = Rect2(1, 2, 92, 92)
 patch_margin_left = 89
@@ -31,12 +25,37 @@ patch_margin_top = 7
 patch_margin_right = 89
 patch_margin_bottom = 10
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
+[node name="Marker2D" type="Marker2D" parent="Node2D"]
+
+[node name="drawzone" type="ColorRect" parent="Node2D"]
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 785.0
+offset_bottom = 302.0
+color = Color(1, 1, 1, 0)
+
+[node name="background" type="NinePatchRect" parent="."]
+z_index = -1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -470.0
+offset_right = 461.0
+offset_bottom = 455.0
+grow_horizontal = 2
+texture = ExtResource("1_vyelk")
+region_rect = Rect2(0, 0, 100, 100)
+patch_margin_left = 92
+patch_margin_top = 7
+patch_margin_right = 92
+patch_margin_bottom = 8
+
+[node name="desk" type="NinePatchRect" parent="."]
 anchors_preset = -1
 anchor_left = 0.0296875
-anchor_top = 0.633
+anchor_top = 0.644111
 anchor_right = 0.976563
-anchor_bottom = 1.0
+anchor_bottom = 0.986111
 offset_top = 0.23999
 grow_horizontal = 2
 grow_vertical = 2
@@ -51,42 +70,6 @@ metadata/_edit_use_anchors_ = true
 
 [node name="=== Place Holder Tiles ===" type="Node" parent="."]
 
-[node name="PanelBeige" type="Sprite2D" parent="."]
-position = Vector2(562, 520)
-texture = ExtResource("4_amvis")
+[node name="=== Debug(REMOVE LATER) ===" type="Node" parent="."]
 
-[node name="PanelBeige2" type="Sprite2D" parent="."]
-position = Vector2(259, 520)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige3" type="Sprite2D" parent="."]
-position = Vector2(407, 519)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige4" type="Sprite2D" parent="."]
-position = Vector2(258, 650)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige5" type="Sprite2D" parent="."]
-position = Vector2(412, 652)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige6" type="Sprite2D" parent="."]
-position = Vector2(543, 652)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige7" type="Sprite2D" parent="."]
-position = Vector2(713, 521)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige8" type="Sprite2D" parent="."]
-position = Vector2(709, 641)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige9" type="Sprite2D" parent="."]
-position = Vector2(883, 514)
-texture = ExtResource("4_amvis")
-
-[node name="PanelBeige10" type="Sprite2D" parent="."]
-position = Vector2(864, 640)
-texture = ExtResource("4_amvis")
+[node name="in_game_debug" parent="=== Debug(REMOVE LATER) ===" instance=ExtResource("5_tdjob")]

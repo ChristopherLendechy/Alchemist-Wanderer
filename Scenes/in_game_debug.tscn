@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbss2imea8y2b"]
+
+[ext_resource type="Script" path="res://actions.gd" id="1_kb48n"]
+
+[node name="in_game_debug" type="Node"]
+
+[node name="actions" type="Node" parent="."]
+script = ExtResource("1_kb48n")
