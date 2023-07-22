@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wgdl1"]
 size = Vector2(81.4669, 80.4076)
 
-[node name="Card" type="Sprite2D"]
+[node name="Card" type="Sprite2D" groups=["cards"]]
 position = Vector2(752, 432)
 texture = ExtResource("1_5npmf")
 script = ExtResource("2_xumka")
@@ -19,7 +19,7 @@ position = Vector2(1.90948, 1.95439)
 scale = Vector2(0.693408, 0.695008)
 texture = ExtResource("3_wmo4m")
 region_enabled = true
-region_rect = Rect2(662, 398, 84, 108)
+region_rect = Rect2(390, 533, 116, 93)
 
 [node name="CardBack" type="Sprite2D" parent="."]
 position = Vector2(1.90948, 1.95439)
