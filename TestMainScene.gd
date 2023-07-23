@@ -30,7 +30,7 @@ func nextLevel(finishedLevel):
 		3:
 			var levelThree = game_level.instantiate()
 			levelThree.connect("levelPassed", nextLevel)
-			levelThree.totalMatches = 4
+			levelThree.totalMatches = 8
 			levelThree.currentLevel = 3
 			add_child(levelThree)
 			

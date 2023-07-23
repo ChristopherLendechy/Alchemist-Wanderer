@@ -1,8 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://ckyfn6f26hmhj"]
+[gd_scene load_steps=12 format=3 uid="uid://ckyfn6f26hmhj"]
 
 [ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_ideiu"]
 [ext_resource type="Texture2D" uid="uid://b5kx3p3lred7c" path="res://Assets/Map/parchmentCrinkled.png" id="1_ql06x"]
-[ext_resource type="Script" path="res://Scenes/MainMenu.gd" id="2_swqf3"]
 [ext_resource type="FontFile" uid="uid://b4hbobhwav07w" path="res://Assets/Fonts/CabinSketch-Bold.ttf" id="2_v6alk"]
 [ext_resource type="FontFile" uid="uid://80gsysk886ui" path="res://Assets/Fonts/CabinSketch-Regular.ttf" id="3_u6ji3"]
 [ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="4_tkp8j"]
@@ -34,7 +33,6 @@ patch_margin_right = 256
 patch_margin_bottom = 256
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
-script = ExtResource("2_swqf3")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect"]
 layout_mode = 1
@@ -100,4 +98,4 @@ volume_db = -5.622
 
 [node name="in_game_debug" parent="." instance=ExtResource("4_tkp8j")]
 
-[connection signal="pressed" from="NinePatchRect/Button" to="NinePatchRect" method="_on_button_pressed"]
+[connection signal="pressed" from="NinePatchRect/Button" to="." method="_on_button_pressed"]

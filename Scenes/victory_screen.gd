@@ -47,6 +47,7 @@ func reveal_map():
 	tween2.tween_property($treasure,"scale", Vector2(1,1),.5)
 	
 	await get_tree().create_timer(5).timeout
-	gameEnd.emit(4)
+	gameEnd.emit()
+	
 	
 	

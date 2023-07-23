@@ -16,3 +16,9 @@ func restart_game():
 	#add_child(main_menu)
 	
 	get_tree().reload_current_scene()
+
+
+
+func _on_main_menu_menu_closed() -> void:
+	remove_child(get_node("MainMenu"))
+	

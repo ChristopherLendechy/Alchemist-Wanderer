@@ -10,3 +10,5 @@ script = ExtResource("1_6eb8k")
 [node name="TestMainScene" parent="." instance=ExtResource("3_ea0hb")]
 
 [node name="MainMenu" parent="." instance=ExtResource("2_7pmr5")]
+
+[connection signal="menuClosed" from="MainMenu" to="." method="_on_main_menu_menu_closed"]
