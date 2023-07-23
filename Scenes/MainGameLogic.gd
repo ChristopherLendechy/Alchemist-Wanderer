@@ -60,6 +60,9 @@ func cardCheck(cardRect: Rect2) -> void:
 			get_tree().call_group("cards", "cardLock",true)
 			if currentMatches == totalMatches:
 				print("LEVEL CLEARED")
+				await get_tree().create_timer(1).timeout
+				SceneTransition.play_animation_reverse()
+				await get_tree().create_timer(1).timeout
 				levelPassed.emit(currentLevel)
 				
 				queue_free()
