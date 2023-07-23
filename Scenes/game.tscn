@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxxnlapcil7uq"]
+
+[ext_resource type="Script" path="res://=== GameRoot ===.gd" id="1_wavmm"]
+
+[node name="=== GameRoot ===" type="Node"]
+script = ExtResource("1_wavmm")

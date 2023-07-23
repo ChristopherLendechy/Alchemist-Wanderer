@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cif7kvs604560" path="res://Assets/Map/panel_brown.png" id="1_vyelk"]
 [ext_resource type="Texture2D" uid="uid://dirslcf2uj6ku" path="res://Assets/Map/panelInset_beige.png" id="2_65hff"]
 [ext_resource type="Texture2D" uid="uid://d0ulknmxcql5h" path="res://Assets/Map/buttonSquare_blue.png" id="3_w4w3h"]
-[ext_resource type="PackedScene" path="res://Scenes/in_game_debug.tscn" id="5_tdjob"]
+[ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="5_tdjob"]
 [ext_resource type="PackedScene" uid="uid://crgduwamotljr" path="res://Scenes/card_creator.tscn" id="5_us2d4"]
 
 [node name="=== Scene Root ===" type="Node"]

@@ -17,4 +17,7 @@ func _on_button_pressed() -> void:
 	tween.tween_property($RichTextLabel2,"self_modulate:a",0 , 0.1)
 	$TransitionSound.play()
 	tween.tween_property($".","size:x",0, 1)
+	await get_tree().create_timer(1).timeout
+	get_tree().change_scene_to_file("res://Scenes/test_world.tscn")
+	
 	
