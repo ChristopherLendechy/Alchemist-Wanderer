@@ -46,8 +46,11 @@ func reveal_map():
 	tween2.tween_property($treasure,"scale", Vector2(1.5,1.5),.5)
 	tween2.tween_property($treasure,"scale", Vector2(1,1),.5)
 	
-	await get_tree().create_timer(3).timeout
+	await get_tree().create_timer(5).timeout
+	SceneTransition.play_animation_reverse()
+	await get_tree().create_timer(1.5).timeout
 	gameEnd.emit(4)
+
 	
 	
 	

@@ -12,10 +12,10 @@ func _ready() -> void:
 func nextLevel(finishedLevel):
 	var level = get_tree().get_nodes_in_group("game_level")
 	var lastLevel = level[0]
+
 	remove_child(lastLevel)
-	
-	
 	await get_tree().create_timer(1.5).timeout
+	
 	SceneTransition.play_animation()
 	# ADD IN BETWEEN HERE
 	
@@ -24,14 +24,14 @@ func nextLevel(finishedLevel):
 		2:
 			var levelTwo = game_level.instantiate()
 			levelTwo.connect("levelPassed", nextLevel)
-			levelTwo.totalMatches = 4
+			levelTwo.totalMatches = 5
 			levelTwo.currentLevel = 2
 			add_child(levelTwo)
 			
 		3:
 			var levelThree = game_level.instantiate()
 			levelThree.connect("levelPassed", nextLevel)
-			levelThree.totalMatches = 6
+			levelThree.totalMatches = 7
 			levelThree.currentLevel = 3
 			add_child(levelThree)
 			
@@ -44,7 +44,7 @@ func nextLevel(finishedLevel):
 		5:
 			gameRestart.emit()
 			get_tree().reload_current_scene()
-			await get_tree().create_timer(1).timeout
+			#await get_tree().create_timer(1).timeout
 			queue_free()
 			#var menu = main_menu.instantiate()
 			#add_sibling(main_menu)
@@ -54,6 +54,6 @@ func nextLevel(finishedLevel):
 func level_1():
 	var levelOne = game_level.instantiate()
 	levelOne.connect("levelPassed", nextLevel)
-	levelOne.totalMatches = 2
+	levelOne.totalMatches = 4
 	levelOne.currentLevel = 1
 	add_child(levelOne)
