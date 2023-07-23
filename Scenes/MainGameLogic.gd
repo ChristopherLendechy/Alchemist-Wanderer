@@ -23,26 +23,12 @@ func create_level():
 	$Cards/CardCreator.makeCards()
 	pass
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 func _on_card_creator_cards_created() -> void:
 	var cards = get_tree().get_nodes_in_group("cards")
 	for card in cards:
 		card.connect("flipped",cardCheck)
 		card.connect("unflipped",cardRemoved)
-	
-	pass # Replace with function body.
-
-
+		
 func cardCheck(cardRect: Rect2) -> void:
 	if currentCards.size() < 1:
 		currentCards.append(cardRect)
