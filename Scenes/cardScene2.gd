@@ -36,6 +36,7 @@ func flip_forward():
 	frontFacing = !frontFacing
 	cardChosen = true
 	add_to_group("chosenCard")
+	$Flip.play()
 	tween = create_tween()
 	tween.tween_property($".","scale",Vector2(0.01,1),0.2)
 	tween.tween_property($CardBack,"self_modulate:a",0, 0.1)
