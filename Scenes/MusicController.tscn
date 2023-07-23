@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ml3n3ysetefc"]
+
+[ext_resource type="Script" path="res://MusicController.gd" id="1_2w8by"]
+[ext_resource type="AudioStream" uid="uid://cpk0eydwyengq" path="res://Assets/Audio/calm-music-for-a-horror-game-155206.mp3" id="2_j1yt8"]
+
+[node name="MusicController" type="Node"]
+script = ExtResource("1_2w8by")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_j1yt8")

@@ -1,11 +1,15 @@
 extends Node
 
-
+var music = load("res://Assets/Audio/calm-music-for-a-horror-game-155206.mp3")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	MusicController.play_music()
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
+func play_music():
+	$Music.stream = music
+	$Music.play()
