@@ -7,11 +7,12 @@ var cards : Array[Card]
 var lastRound = false
 signal cardsCreated
 func _ready() -> void:
-	pass
+	load_regions_from_json()
+	
 	
 
 func makeCards():
-	load_regions_from_json()
+	
 	pickRandomCards()
 	for i in range(numberOfMatches):
 		for j in range(2):

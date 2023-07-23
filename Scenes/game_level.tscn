@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://crgduwamotljr" path="res://Scenes/card_creator.tscn" id="6_aea5f"]
 [ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="7_ioacy"]
 
-[node name="=== Scene Root ===" type="Node" groups=["chosenCard"]]
+[node name="=== Scene Root ===" type="Node" groups=["chosenCard", "game_level"]]
 script = ExtResource("1_n046a")
 
 [node name="Node2D" type="Node2D" parent="."]
@@ -72,7 +72,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Cards" type="Node" parent="."]
 
-[node name="CardCreator" parent="Cards" groups=["game_level"] instance=ExtResource("6_aea5f")]
+[node name="CardCreator" parent="Cards" instance=ExtResource("6_aea5f")]
 position = Vector2(189, 516)
 
 [node name="=== Debug(REMOVE LATER) ===" type="Node" parent="."]

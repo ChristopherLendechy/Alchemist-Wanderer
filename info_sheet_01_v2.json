@@ -1,45 +1,19 @@
 [
-	{
-		"name": "arrowCorner.png",
-		"rect": {
-			"x": 512,
-			"y": 1152,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "arrowCornerSquare.png",
-		"rect": {
-			"x": 1024,
-			"y": 1152,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "arrowCrossing.png",
-		"rect": {
-			"x": 1024,
-			"y": 1024,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "arrowEnd.png",
-		"rect": {
-			"x": 1024,
-			"y": 896,
-			"width": 128,
-			"height": 128
-		}
-	},
+	
 	{
 		"name": "arrowHead.png",
 		"rect": {
 			"x": 1024,
 			"y": 768,
+			"width": 128,
+			"height": 128
+		}
+	},
+	{
+		"name": "arrowSmall.png",
+		"rect": {
+			"x": 1024,
+			"y": 640,
 			"width": 128,
 			"height": 128
 		}
