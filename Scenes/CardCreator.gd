@@ -44,6 +44,8 @@ func load_regions_from_json() -> Array:
 				var rect_data = sprite["rect"]
 				if sprite["name"] != "compass.png" and (sprite["name"] != "chest.png" and lastRound == false):
 					regions.append(Rect2(rect_data["x"], rect_data["y"], rect_data["width"], rect_data["height"]))
+				elif sprite["name"] != "compass.png" and lastRound == true:
+					regions.append(Rect2(rect_data["x"], rect_data["y"], rect_data["width"], rect_data["height"]))
 			return regions
 		else:
 			print("Unexpected data")

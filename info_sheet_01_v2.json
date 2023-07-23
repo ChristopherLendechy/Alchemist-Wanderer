@@ -44,24 +44,7 @@
 			"height": 128
 		}
 	},
-	{
-		"name": "arrowSmall.png",
-		"rect": {
-			"x": 1024,
-			"y": 640,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "arrowStraight.png",
-		"rect": {
-			"x": 1024,
-			"y": 384,
-			"width": 128,
-			"height": 128
-		}
-	},
+	
 	{
 		"name": "banner.png",
 		"rect": {
