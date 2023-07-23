@@ -44,7 +44,7 @@ func get_random_position(map_pos, map_size):
 
 
 func _matched_card_appear(rect) -> void:
-	for i in randi_range(2,10):
+	for i in randi_range(2,6):
 		var randomInt = randi_range(0,markers.size()-1)
 		markers[randomInt].iconAppear(rect)
 		markers.remove_at(randomInt)

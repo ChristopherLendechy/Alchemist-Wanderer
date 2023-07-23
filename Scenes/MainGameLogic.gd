@@ -61,7 +61,7 @@ func cardCheck(cardRect: Rect2) -> void:
 			if currentMatches == totalMatches:
 				print("LEVEL CLEARED")
 				levelPassed.emit(currentLevel)
-				await get_tree().create_timer(1.5).timeout
+				
 				queue_free()
 		else:
 			await get_tree().create_timer(1).timeout

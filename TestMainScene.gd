@@ -14,7 +14,8 @@ func nextLevel(finishedLevel):
 	var level = get_tree().get_nodes_in_group("game_level")
 	var lastLevel = level[0]
 	remove_child(lastLevel)
-	
+	await get_tree().create_timer(1.5).timeout
+	# ADD IN BETWEEN HERE
 	match finishedLevel + 1:
 		2:
 			var levelTwo = game_level.instantiate()
