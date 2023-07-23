@@ -54,15 +54,6 @@
 		}
 	},
 	{
-		"name": "arrowSplit.png",
-		"rect": {
-			"x": 1024,
-			"y": 512,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
 		"name": "arrowStraight.png",
 		"rect": {
 			"x": 1024,
@@ -215,33 +206,7 @@
 			"height": 128
 		}
 	},
-	{
-		"name": "elementCircle.png",
-		"rect": {
-			"x": 768,
-			"y": 768,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "elementCross.png",
-		"rect": {
-			"x": 768,
-			"y": 640,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "elementDiamond.png",
-		"rect": {
-			"x": 768,
-			"y": 512,
-			"width": 128,
-			"height": 128
-		}
-	},
+	
 	{
 		"name": "elementShield.png",
 		"rect": {
@@ -413,51 +378,7 @@
 			"height": 128
 		}
 	},
-	{
-		"name": "pathCorner.png",
-		"rect": {
-			"x": 512,
-			"y": 512,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "pathCrossing.png",
-		"rect": {
-			"x": 512,
-			"y": 384,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "pathEnd.png",
-		"rect": {
-			"x": 512,
-			"y": 256,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "pathSplit.png",
-		"rect": {
-			"x": 896,
-			"y": 256,
-			"width": 128,
-			"height": 128
-		}
-	},
-	{
-		"name": "pathStraight.png",
-		"rect": {
-			"x": 896,
-			"y": 384,
-			"width": 128,
-			"height": 128
-		}
-	},
+	
 	{
 		"name": "pyramid.png",
 		"rect": {

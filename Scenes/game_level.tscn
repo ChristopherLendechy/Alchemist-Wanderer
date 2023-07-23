@@ -1,26 +1,26 @@
-[gd_scene load_steps=8 format=3 uid="uid://cowq7x22twvjo"]
+[gd_scene load_steps=8 format=3 uid="uid://dfaj42thauy1c"]
 
-[ext_resource type="Script" path="res://Scenes/mapscript.gd" id="1_044gr"]
-[ext_resource type="Script" path="res://Scenes/MainGameLogic.gd" id="1_r0pli"]
-[ext_resource type="Texture2D" uid="uid://cif7kvs604560" path="res://Assets/Map/panel_brown.png" id="1_vyelk"]
-[ext_resource type="Texture2D" uid="uid://dirslcf2uj6ku" path="res://Assets/Map/panelInset_beige.png" id="2_65hff"]
-[ext_resource type="Texture2D" uid="uid://d0ulknmxcql5h" path="res://Assets/Map/buttonSquare_blue.png" id="3_w4w3h"]
-[ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="5_tdjob"]
-[ext_resource type="PackedScene" uid="uid://crgduwamotljr" path="res://Scenes/card_creator.tscn" id="5_us2d4"]
+[ext_resource type="Script" path="res://Scenes/MainGameLogic.gd" id="1_n046a"]
+[ext_resource type="Script" path="res://Scenes/mapscript.gd" id="2_yo8nk"]
+[ext_resource type="Texture2D" uid="uid://dirslcf2uj6ku" path="res://Assets/Map/panelInset_beige.png" id="3_63wrb"]
+[ext_resource type="Texture2D" uid="uid://cif7kvs604560" path="res://Assets/Map/panel_brown.png" id="4_4s0jn"]
+[ext_resource type="Texture2D" uid="uid://d0ulknmxcql5h" path="res://Assets/Map/buttonSquare_blue.png" id="5_d1tnt"]
+[ext_resource type="PackedScene" uid="uid://crgduwamotljr" path="res://Scenes/card_creator.tscn" id="6_aea5f"]
+[ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="7_ioacy"]
 
 [node name="=== Scene Root ===" type="Node" groups=["chosenCard"]]
-script = ExtResource("1_r0pli")
+script = ExtResource("1_n046a")
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(253, 70)
-script = ExtResource("1_044gr")
+script = ExtResource("2_yo8nk")
 
 [node name="map" type="NinePatchRect" parent="Node2D"]
 offset_left = -60.0
 offset_top = -50.0
 offset_right = 835.0
 offset_bottom = 360.0
-texture = ExtResource("2_65hff")
+texture = ExtResource("3_63wrb")
 region_rect = Rect2(1, 2, 92, 92)
 patch_margin_left = 89
 patch_margin_top = 7
@@ -45,7 +45,7 @@ offset_left = -470.0
 offset_right = 461.0
 offset_bottom = 455.0
 grow_horizontal = 2
-texture = ExtResource("1_vyelk")
+texture = ExtResource("4_4s0jn")
 region_rect = Rect2(0, 0, 100, 100)
 patch_margin_left = 92
 patch_margin_top = 7
@@ -62,7 +62,7 @@ offset_top = 0.23999
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 0
-texture = ExtResource("3_w4w3h")
+texture = ExtResource("5_d1tnt")
 region_rect = Rect2(0, 1, 45, 48)
 patch_margin_left = 7
 patch_margin_top = 4
@@ -70,14 +70,14 @@ patch_margin_right = 7
 patch_margin_bottom = 9
 metadata/_edit_use_anchors_ = true
 
-[node name="=== Place Holder Tiles ===" type="Node" parent="."]
+[node name="Cards" type="Node" parent="."]
 
-[node name="CardCreator" parent="=== Place Holder Tiles ===" instance=ExtResource("5_us2d4")]
+[node name="CardCreator" parent="Cards" groups=["game_level"] instance=ExtResource("6_aea5f")]
 position = Vector2(189, 516)
 
 [node name="=== Debug(REMOVE LATER) ===" type="Node" parent="."]
 
-[node name="in_game_debug" parent="=== Debug(REMOVE LATER) ===" instance=ExtResource("5_tdjob")]
+[node name="in_game_debug" parent="=== Debug(REMOVE LATER) ===" instance=ExtResource("7_ioacy")]
 
 [connection signal="matchedCard" from="." to="Node2D" method="_matched_card_appear"]
-[connection signal="cardsCreated" from="=== Place Holder Tiles ===/CardCreator" to="." method="_on_card_creator_cards_created"]
+[connection signal="cardsCreated" from="Cards/CardCreator" to="." method="_on_card_creator_cards_created"]
