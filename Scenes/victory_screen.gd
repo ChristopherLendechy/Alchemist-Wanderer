@@ -2,7 +2,7 @@ extends Node
 
 var tween
 var tween2
-
+signal gameEnd(level)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -46,6 +46,7 @@ func reveal_map():
 	tween2.tween_property($treasure,"scale", Vector2(1.5,1.5),.5)
 	tween2.tween_property($treasure,"scale", Vector2(1,1),.5)
 	
-	
+	await get_tree().create_timer(5).timeout
+	gameEnd.emit(4)
 	
 	
