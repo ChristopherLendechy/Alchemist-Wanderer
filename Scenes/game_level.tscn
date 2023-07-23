@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfaj42thauy1c"]
+[gd_scene load_steps=10 format=3 uid="uid://dfaj42thauy1c"]
 
 [ext_resource type="Script" path="res://Scenes/MainGameLogic.gd" id="1_n046a"]
 [ext_resource type="Script" path="res://Scenes/mapscript.gd" id="2_yo8nk"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://d0ulknmxcql5h" path="res://Assets/Map/buttonSquare_blue.png" id="5_d1tnt"]
 [ext_resource type="PackedScene" uid="uid://crgduwamotljr" path="res://Scenes/card_creator.tscn" id="6_aea5f"]
 [ext_resource type="PackedScene" uid="uid://bbss2imea8y2b" path="res://Scenes/in_game_debug.tscn" id="7_ioacy"]
+[ext_resource type="Texture2D" uid="uid://84xoab3xpf08" path="res://Assets/Patterns/pattern_58.png" id="8_omshg"]
+[ext_resource type="Texture2D" uid="uid://cd5tv4e5tiql6" path="res://Assets/Patterns/pattern_06.png" id="9_sbgj8"]
 
 [node name="=== Scene Root ===" type="Node" groups=["chosenCard", "game_level"]]
 script = ExtResource("1_n046a")
@@ -53,6 +55,7 @@ patch_margin_right = 92
 patch_margin_bottom = 8
 
 [node name="desk" type="NinePatchRect" parent="."]
+modulate = Color(1, 1, 1, 0.541176)
 anchors_preset = -1
 anchor_left = 0.0296875
 anchor_top = 0.644111
@@ -78,6 +81,24 @@ position = Vector2(189, 516)
 [node name="=== Debug(REMOVE LATER) ===" type="Node" parent="."]
 
 [node name="in_game_debug" parent="=== Debug(REMOVE LATER) ===" instance=ExtResource("7_ioacy")]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.768627, 0.737255, 0.654902, 1)
+z_index = -2
+offset_right = 1283.0
+offset_bottom = 602.0
+texture = ExtResource("8_omshg")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+modulate = Color(0.556863, 0.529412, 0.847059, 1)
+z_index = -2
+offset_top = 602.0
+offset_right = 1281.0
+offset_bottom = 723.0
+texture = ExtResource("9_sbgj8")
+expand_mode = 1
+stretch_mode = 1
 
 [connection signal="matchedCard" from="." to="Node2D" method="_matched_card_appear"]
 [connection signal="cardsCreated" from="Cards/CardCreator" to="." method="_on_card_creator_cards_created"]

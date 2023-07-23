@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0i5yxjk55ilt"]
+[gd_scene load_steps=7 format=3 uid="uid://d0i5yxjk55ilt"]
 
 [ext_resource type="Texture2D" uid="uid://b5kx3p3lred7c" path="res://Assets/Map/parchmentCrinkled.png" id="1_8y567"]
 [ext_resource type="Script" path="res://Scenes/scene_transition.gd" id="1_8yppn"]
+[ext_resource type="AudioStream" uid="uid://b7h4rvu8d825p" path="res://Assets/Audio/page-flip-8.wav" id="3_tuvs5"]
 
 [sub_resource type="Animation" id="Animation_p0r06"]
 resource_name = "RESET"
@@ -98,8 +99,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -520.0
 offset_top = -4.0
-offset_right = 1279.0
-offset_bottom = 1276.0
+offset_right = -1.0
+offset_bottom = 556.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -115,3 +116,6 @@ axis_stretch_vertical = 1
 libraries = {
 "": SubResource("AnimationLibrary_vfdid")
 }
+
+[node name="PageTurn" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tuvs5")

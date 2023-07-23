@@ -94,6 +94,7 @@ text = "[tornado radius=.5 freq=-10]Match the tiles to complete the map![tornado
 
 [node name="TransitionSound" type="AudioStreamPlayer" parent="NinePatchRect"]
 stream = ExtResource("6_yhghn")
+volume_db = -5.622
 
 [node name="Timer" type="Timer" parent="NinePatchRect"]
 
