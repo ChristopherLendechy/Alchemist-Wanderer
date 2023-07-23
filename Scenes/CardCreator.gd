@@ -7,18 +7,17 @@ var cards : Array[Card]
 var lastRound = false
 signal cardsCreated
 func _ready() -> void:
-	load_regions_from_json()
-	makeCards()
+	pass
 	
 
 func makeCards():
+	load_regions_from_json()
 	pickRandomCards()
 	for i in range(numberOfMatches):
 		for j in range(2):
 			var currentCard = card.instantiate()
 			currentCard.get_node("CardFront").region_rect = pickedRegions[i]
 			if pickedRegions[i].size.x !=  pickedRegions[i].size.y:
-				print(pickedRegions[i].size.x,pickedRegions[i].size.y)
 				if pickedRegions[i].size.x > pickedRegions[i].size.y:
 					currentCard.get_node("CardFront").apply_scale(Vector2(0.5,0.5))
 				if pickedRegions[i].size.x < pickedRegions[i].size.y:
@@ -41,7 +40,6 @@ func load_regions_from_json() -> Array:
 	if error == OK:
 		var data_received = json.data
 		if typeof(data_received) == TYPE_ARRAY:
-			#print(data_received) # Prints array
 			for sprite in data_received:
 				var rect_data = sprite["rect"]
 				if sprite["name"] != "compass.png" and (sprite["name"] != "chest.png" and lastRound == false):

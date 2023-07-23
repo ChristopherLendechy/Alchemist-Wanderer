@@ -3,10 +3,11 @@ extends Node2D
 @onready var Marker = preload("res://Scenes/marker_2d.tscn")
 @onready var map = $drawzone
 
-@export var num_markers = 8
+@export var num_markers = 20
 
 var marker_positions = []
-@export var min_distance_between_markers  = 130
+var markers = []
+@export var min_distance_between_markers  = 60
 
 func _ready():
 	# randomize()
@@ -27,6 +28,7 @@ func spawn_markers():
 		# Assign the marker's position to be a random point within the map
 		marker.position = random_pos
 		marker_positions.append(random_pos)
+		markers.append(marker)
 		add_child(marker)  # Add the marker to the scene
 		
 func get_random_position(map_pos, map_size):
@@ -37,3 +39,13 @@ func get_random_position(map_pos, map_size):
 		if pos.distance_to(random_pos) < min_distance_between_markers:
 			return get_random_position(map_pos, map_size)  # Recursively get a new position if this one is too close to an existing one
 	return random_pos
+
+
+
+
+func _matched_card_appear(rect) -> void:
+	for i in randi_range(2,10):
+		var randomInt = randi_range(0,markers.size()-1)
+		markers[randomInt].iconAppear(rect)
+		markers.remove_at(randomInt)
+	pass # Replace with function body.

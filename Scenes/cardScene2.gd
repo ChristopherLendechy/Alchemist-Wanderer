@@ -33,9 +33,9 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 			
 
 func flip_forward():
-	print("FLIPPED")
 	frontFacing = !frontFacing
 	cardChosen = true
+	add_to_group("chosenCard")
 	tween = create_tween()
 	tween.tween_property($".","scale",Vector2(0.01,1),0.2)
 	tween.tween_property($CardBack,"self_modulate:a",0, 0.1)
@@ -45,6 +45,7 @@ func flip_forward():
 func flip_back():
 	cardChosen = false
 	frontFacing = !frontFacing
+	remove_from_group("chosenCard")
 	tween = create_tween()
 	tween.tween_property($".","scale",Vector2(0.01,1),0.2)
 	tween.tween_property($CardFront,"self_modulate:a",0, 0.1)
@@ -58,3 +59,6 @@ func cardLock(matchChecked: bool):
 	if cardChosen == true and matchChecked == true:
 		flip_back()
 	
+
+func matched():
+	queue_free()
