@@ -31,7 +31,7 @@ func spawn_markers():
 	var map_size = map.size
 	var map_pos = map.position
 	
-	for i in range(min(num_markers, len(possible_positions))):
+	for i in range(len(possible_positions)):
 		var marker = Marker.instantiate()
 		var random_pos = possible_positions[i]
 		marker.position = random_pos
@@ -62,7 +62,7 @@ func get_random_position(map_pos, map_size):
 
 
 func _matched_card_appear(rect) -> void:
-	for i in randi_range(2,6):
+	for i in randi_range(3,8):
 		var randomInt = randi_range(0,markers.size()-1)
 		markers[randomInt].iconAppear(rect)
 		markers.remove_at(randomInt)
