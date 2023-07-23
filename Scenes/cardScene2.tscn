@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cjvnwlxbvxq4d"]
+[gd_scene load_steps=6 format=3 uid="uid://cjvnwlxbvxq4d"]
 
 [ext_resource type="Texture2D" uid="uid://3ss4uyc3nu83" path="res://Assets/Cartography Pack/panelInset_beige.png" id="1_5npmf"]
 [ext_resource type="Script" path="res://Scenes/cardScene2.gd" id="2_xumka"]
 [ext_resource type="Texture2D" uid="uid://dfxkt8l1yc3fw" path="res://Assets/Cartography Pack/spritesheet_retina-export.png" id="3_wmo4m"]
+[ext_resource type="AudioStream" uid="uid://bw2wfxxt2m20d" path="res://Assets/Audio/handleSmallLeather2.ogg" id="4_ntp51"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wgdl1"]
 size = Vector2(81.4669, 80.4076)
@@ -33,5 +34,8 @@ region_rect = Rect2(774, 1030, 116, 116)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 2.14828)
 shape = SubResource("RectangleShape2D_wgdl1")
+
+[node name="Flip" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ntp51")
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

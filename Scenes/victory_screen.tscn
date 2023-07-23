@@ -1,0 +1,189 @@
+[gd_scene load_steps=10 format=3 uid="uid://botl6j2qag4ts"]
+
+[ext_resource type="Texture2D" uid="uid://du46s3us4up0f" path="res://Assets/Map/parchmentAncient.png" id="1_mvcc3"]
+[ext_resource type="Script" path="res://Scenes/victory_screen.gd" id="1_ykkm7"]
+[ext_resource type="FontFile" uid="uid://b4hbobhwav07w" path="res://Assets/Fonts/CabinSketch-Bold.ttf" id="2_rtpeh"]
+[ext_resource type="FontFile" uid="uid://80gsysk886ui" path="res://Assets/Fonts/CabinSketch-Regular.ttf" id="3_r6fy1"]
+[ext_resource type="AudioStream" uid="uid://b7h4rvu8d825p" path="res://Assets/Audio/page-flip-8.wav" id="4_j2dx6"]
+[ext_resource type="Texture2D" uid="uid://84xoab3xpf08" path="res://Assets/Patterns/pattern_58.png" id="5_04sy3"]
+[ext_resource type="Texture2D" uid="uid://cd5tv4e5tiql6" path="res://Assets/Patterns/pattern_06.png" id="6_uhkuk"]
+[ext_resource type="Texture2D" uid="uid://dfxkt8l1yc3fw" path="res://Assets/Cartography Pack/spritesheet_retina-export.png" id="7_22vtl"]
+[ext_resource type="AudioStream" uid="uid://0gf5vc3qps1r" path="res://Assets/Audio/bookFlip3.ogg" id="9_xa8vc"]
+
+[node name="VictoryScreen" type="Node"]
+script = ExtResource("1_ykkm7")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = 150.0
+offset_top = 49.0
+offset_right = 1162.0
+offset_bottom = 559.0
+texture = ExtResource("1_mvcc3")
+region_rect = Rect2(0, 0, 1024, 1024)
+patch_margin_left = 258
+patch_margin_top = 254
+patch_margin_right = 256
+patch_margin_bottom = 256
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+metadata/_edit_lock_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NinePatchRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.288
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 280.616
+offset_top = 82.0
+offset_right = -257.0
+offset_bottom = -459.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_rtpeh")
+theme_override_font_sizes/normal_font_size = 120
+bbcode_enabled = true
+text = "[shake rate=5 level=10 connected=10]Match 2 Map[/shake]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="NinePatchRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 823.0
+offset_top = 649.0
+offset_right = -332.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_r6fy1")
+theme_override_font_sizes/normal_font_size = 39
+bbcode_enabled = true
+text = "[tornado radius=.5 freq=-10][tornado]"
+
+[node name="TransitionSound" type="AudioStreamPlayer" parent="NinePatchRect"]
+stream = ExtResource("4_j2dx6")
+volume_db = -5.622
+
+[node name="Timer" type="Timer" parent="NinePatchRect"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.768627, 0.737255, 0.654902, 1)
+z_index = -2
+offset_right = 1283.0
+offset_bottom = 602.0
+texture = ExtResource("5_04sy3")
+stretch_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+modulate = Color(0.556863, 0.529412, 0.847059, 1)
+z_index = -2
+offset_top = 602.0
+offset_right = 1281.0
+offset_bottom = 723.0
+texture = ExtResource("6_uhkuk")
+expand_mode = 1
+stretch_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="start" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(885, 366)
+rotation = -1.5708
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(1040, 656, 96, 96)
+
+[node name="1" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(778, 364)
+rotation = 1.5708
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(896, 384, 128, 128)
+
+[node name="2" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(651, 363)
+rotation = 1.5708
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(896, 256, 128, 128)
+
+[node name="4" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(743, 275)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(384, 656, 128, 112)
+
+[node name="5" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(647, 480)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(896, 512, 128, 128)
+
+[node name="6" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(730, 178)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(384, 656, 128, 112)
+
+[node name="7" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(642, 238)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(384, 656, 128, 112)
+
+[node name="8" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(532, 355)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(528, 512, 112, 112)
+
+[node name="9" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(439, 333)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(128, 1024, 128, 128)
+
+[node name="10" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(516, 244)
+rotation = 3.14159
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(528, 512, 112, 112)
+
+[node name="11" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(552, 160)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(128, 1024, 128, 128)
+
+[node name="12" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(407, 227)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(528, 512, 112, 112)
+
+[node name="treasure" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(401, 143)
+texture = ExtResource("7_22vtl")
+region_enabled = true
+region_rect = Rect2(912, 192, 96, 64)
+
+[node name="Scribble" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_xa8vc")
