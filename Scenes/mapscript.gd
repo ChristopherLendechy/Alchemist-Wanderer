@@ -24,7 +24,6 @@ func generate_possible_positions():
 		for j in range(int(map_pos.y), int(map_pos.y + map_size.y), grid_size):
 			possible_positions.append(Vector2(i, j))
 	# Shuffle the possible positions
-	print(possible_positions)
 	possible_positions.shuffle()
 	
 func spawn_markers():

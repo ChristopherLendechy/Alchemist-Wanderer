@@ -2,6 +2,7 @@ extends Node2D
 var game_level = preload("res://Scenes/game_level.tscn")
 var final_level = preload("res://Scenes/victory_screen.tscn")
 var main_menu = preload("res://Scenes/main_menu.tscn")
+signal gameRestart
 func _ready() -> void:
 	# Launch Level One
 	level_1()
@@ -23,14 +24,14 @@ func nextLevel(finishedLevel):
 		2:
 			var levelTwo = game_level.instantiate()
 			levelTwo.connect("levelPassed", nextLevel)
-			levelTwo.totalMatches = 3
+			levelTwo.totalMatches = 4
 			levelTwo.currentLevel = 2
 			add_child(levelTwo)
 			
 		3:
 			var levelThree = game_level.instantiate()
 			levelThree.connect("levelPassed", nextLevel)
-			levelThree.totalMatches = 4
+			levelThree.totalMatches = 6
 			levelThree.currentLevel = 3
 			add_child(levelThree)
 			
@@ -41,10 +42,14 @@ func nextLevel(finishedLevel):
 			add_child(levelFinal)
 			
 		5:
+			gameRestart.emit()
+			get_tree().reload_current_scene()
+			await get_tree().create_timer(1).timeout
+			queue_free()
 			#var menu = main_menu.instantiate()
 			#add_sibling(main_menu)
 			#level_1()
-			get_parent().get_node("Main Scene").restart_game()
+			#get_parent().get_node("Main Scene").restart_game()
 		
 func level_1():
 	var levelOne = game_level.instantiate()
